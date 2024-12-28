@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../Button";
 import Image from "next/image";
 
 const Mission = () => {
@@ -21,8 +21,8 @@ const Mission = () => {
         {/* Image Placeholder */}
         <div className="flex-1 bg-gray-300 rounded-lg h-64 w-full">
           {/* Placeholder for the image */}
-          <div className="h-full w-full flex items-center justify-center">
-            <Image src="/boat.png" alt="hello" width={32} height={32}></Image>
+          <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
+            <Image src="/camp.svg" alt="camp" width={50} height={50}></Image>
           </div>
         </div>
       </div>
