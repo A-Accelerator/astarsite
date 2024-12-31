@@ -94,3 +94,23 @@ export const SOCIALS = {
     "/wordpress.svg",
   ],
 };
+
+//Testimonials
+export const Reviews = [
+  {
+    id: 1,
+    name: "John Doe",
+    review: "I love this app, it's so easy to use and it's free!",
+  },
+  {
+    id: 2,
+    name: "John",
+    review: "I love this app, it's so easy to use and it's free!",
+  },
+  {
+    id: 3,
+    name: "Bob",
+    review: "I love this app, it's so easy to use and it's free!",
+  },
+];
+
