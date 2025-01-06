@@ -36,6 +36,19 @@ body {
   .btn_dark_green_outline  { 
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white
   }
+
+  .btn_small {
+    @apply px-3 py-1 text-sm;
+  }
+
+  .btn_med {
+    @apply px-5 py-2 text-base;
+  }
+
+  .btn_lg {
+    @apply px-7 py-3 text-lg;
+  }
+
   
   .max-container {
     @apply mx-auto max-w-[1440px];
