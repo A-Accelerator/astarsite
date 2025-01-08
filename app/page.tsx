@@ -2,6 +2,7 @@ import Learn from "@/components/Home/Learn";
 import Mission from "@/components/Home/Mission";
 import Programs from "@/components/Home/Programs";
 import Image from "next/image";
+import Testimonials from "@/components/Home/Testimonials";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Mission />
       <Programs />
       <Learn />
+      <Testimonials />
     </>
   );
 }

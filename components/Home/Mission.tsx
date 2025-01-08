@@ -21,7 +21,7 @@ const Mission = () => {
         {/* Image Placeholder */}
         <div className="flex-1 bg-gray-300 rounded-lg h-64 w-full">
           {/* Placeholder for the image */}
-          <div className="relative z-20 flex flex-1 flex-col xl:w-1/2 h-full">
+          <div className="relative z-5 flex flex-1 flex-col xl:w-1/2 h-full">
             <Image
               src="/image.png"
               alt="code"
