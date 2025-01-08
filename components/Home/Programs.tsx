@@ -1,41 +1,68 @@
-import React from 'react'
-import Button from '../Button';
+import React from "react";
+import Button from "../Button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const Programs = () => {
   return (
-    <section className="max-container padding-container border-2 flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+    <section className="max-container padding-container border-2 flex flex-col items-center gap-10 py-6 lg:py-10">
+      {/* Header Section */}
       <div className="flex justify-center items-center gap-8 bg-gray-200 p-8 rounded-lg">
-        <h1 className="text-3xl font-bold mb-4">Programs We Offer</h1>
+        <h1 className="text-3xl font-bold mb-4">Upcoming Programs</h1>
       </div>
-      <div className="flex justify-between text-center">
-        <div>
-          <h2 className="text-lg font-bold mb-4">Spring 2025 Program</h2>
-          <ul className="space-y-2">
-            <li>Hybrid Format</li>
-            <li>12 Weeks</li>
-            <li>Industry Experience</li>
-            <li>Comprehensive Learning</li>
-            <li>
+
+      {/* Cards Section */}
+      <div className="flex justify-center gap-4 w-full max-w-7xl">
+        {/* Card 1 */}
+        <div className="flex-1 max-w-md">
+          <Card>
+            <CardHeader>
+              <CardTitle>Spring Program 2025</CardTitle>
+              <CardDescription>Card Description</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
               <Button
                 type="button"
                 title="Learn More!"
                 icon=""
-                variant="btn_green btn_med"
+                variant="btn_dark_green btn_med"
               />
-            </li>
-          </ul>
+            </CardFooter>
+          </Card>
         </div>
-        <div>
-          <h2 className="text-lg font-bold mb-4">Summer 2025 Program</h2>
-          <ul className="space-y-2">
-            <li>Item A</li>
-            <li>Item B</li>
-            <li>Item C</li>
-          </ul>
+
+        {/* Card 2 */}
+        <div className="flex-1 max-w-md">
+          <Card>
+            <CardHeader>
+              <CardTitle>Summer Program 2025</CardTitle>
+              <CardDescription>Card Description</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>Card Content</p>
+            </CardContent>
+            <CardFooter>
+              <Button
+                type="button"
+                title="Learn More!"
+                icon=""
+                variant="btn_dark_green btn_med"
+              />
+            </CardFooter>
+          </Card>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Programs
+export default Programs;

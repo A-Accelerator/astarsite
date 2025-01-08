@@ -1,4 +1,4 @@
-import Grow from "@/components/Home/Grow";
+import Learn from "@/components/Home/Learn";
 import Mission from "@/components/Home/Mission";
 import Programs from "@/components/Home/Programs";
 import Image from "next/image";
@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Mission />
       <Programs />
-      <Grow />
+      <Learn />
     </>
   );
 }
