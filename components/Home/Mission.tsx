@@ -1,51 +1,41 @@
 import React from "react";
-import Button from "../Button";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 const Mission = () => {
   return (
-    <section className="max-container padding-container border-2 flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
-      <div className="flex flex-col lg:flex-row items-center gap-8 bg-gray-100 p-6 rounded-lg">
+    <section className="max-container padding-container py-10 pb-32 lg:py-20 flex flex-col gap-10 md:gap-10">
+      {/* Mission Section */}
+      <div className="flex flex-col lg:flex-row items-center gap-10 bg-gradient-to-br from-gray-100 to-gray-200 p-8 rounded-lg shadow-lg">
         {/* Text Content */}
-        <div className="flex-1 text-left">
-          <h1 className="text-4xl font-bold mb-4">
+        <div className="flex-1 text-left space-y-6">
+          <h1 className="text-4xl font-extrabold leading-tight text-gray-800 lg:text-5xl">
             Explore and Accelerate Your Career
           </h1>
-          <p className="text-lg">
+          <p className="text-lg text-gray-600 leading-relaxed">
             A-Star is committed to providing students a positive experience
             while teaching industry-level skills in computer science, allowing
             students to explore and accelerate their career opportunities.
           </p>
         </div>
 
-        {/* Image Placeholder */}
-        <div className="flex-1 bg-gray-300 rounded-lg h-64 w-full">
-          {/* Placeholder for the image */}
-          <div className="relative z-5 flex flex-1 flex-col xl:w-1/2 h-full">
-            <Image
-              src="/image.png"
-              alt="code"
-              className="w-full h-full object-cover"
-              width={0}
-              height={0}
-              sizes="100vw"
-            />
-          </div>
+        {/* Image Content */}
+        <div className="flex-1 rounded-lg overflow-hidden shadow-md">
+          <Image
+            src="/image.png"
+            alt="code"
+            className="object-cover w-full h-64 lg:h-full"
+            width={0}
+            height={0}
+            sizes="100vw"
+          />
         </div>
       </div>
-      <div className="bg-slate-600 flex items-center justify-between rounded-lg px-20 py-6 gap-8">
-        <Button
-          type="button"
-          title="Spring interest form"
-          icon="/star.svg"
-          variant="btn_dark_green_outline btn_med"
-        />
-        <Button
-          type="button"
-          title="Testimonials"
-          icon="/apple.svg"
-          variant="btn_dark_green_outline btn_med"
-        />
+
+      {/* Call-to-Action Section */}
+      <div className="bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center gap-40 rounded-lg px-8 py-6 shadow-md">
+        <Button className="rounded-md">Spring Interest Form</Button>
+        <Button className="rounded-md">Testimonials</Button>
       </div>
     </section>
   );
