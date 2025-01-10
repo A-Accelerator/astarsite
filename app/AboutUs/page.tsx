@@ -1,20 +1,44 @@
 import AboutCompany from '@/components/AboutUs/AboutCompany';
 import Teammamte from '@/components/AboutUs/Teammamte';
 import React from 'react'
+import Action from '@/components/Home/Action';
 
 const AboutUs = () => {
   return (
     <>
-      <section className="bg-gray-300 border-red-300 flex align-items-center justify-center m-6 py-6">
-        <h1 className="text-center font-bold text-4xl">About US</h1>
+      <section
+        className="relative text-black py-40 flex items-center justify-center"
+        style={{
+          backgroundImage: `url(${"shyam.png"})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* Overlay for better text visibility */}
+        <h1 className="relative z-10 text-center font-extrabold text-5xl md:text-6xl tracking-wide">
+          About Us
+        </h1>
       </section>
-      <section className="bg-gray-300 border-red-300 flex flex-col items-center justify-center  m-6 py-6">
-        <Teammamte imagePath="/camp.svg" name="John Doe" blurb="CEO" />
-        <Teammamte imagePath="/camp.svg" name="John Doe" blurb="CEO" />
+
+      <section className="flex flex-col m-6 py-6">
+        <Teammamte
+          imagePath="/vikranth.png"
+          name="Vikranth Mandadi"
+          blurb="Vikranth is a Computer Science student at the University of Wisconsin - Madison, and is currently an intern at PACCAR. He developed a passion for Computer Science his junior year of high school, and wants to share his passion with others. Vikranth values an environment that teaches on the job skills, provides resources for career development, encourages problem solving and critical thinking in a group setting, and mentorship as he believes these are the pieces for helping students grow."
+        />
+        <Teammamte
+          imagePath="/shyam.png"
+          name="Shyam Ramesh"
+          blurb="Shyam Ramesh is a Computer Science student at the Univerity of Washington Bothell. Shyam has experience in full stack development while working at a startup and will be interning at Amazon this summer. Shyam values an environment where mentorship is encouraged and practiced as he believes that it fosters growth. In his free time he enjoys playing football, working out and painting."
+        />
       </section>
-      <section className="bg-gray-300 border-red-300 flex items-center justify-center  m-6 py-6">
-        <AboutCompany name='A* Accelerator' description='Something'/>
+      <section className="flex items-center justify-center  m-6 py-6">
+        <AboutCompany
+          name="Why A* Accelerator?"
+          description="A* is a search algorithm that that uses a predicted heuristic value based on certain parameters to find the shortest distance from the current state to a goal state. This program is a replica of the A* search algorithm where we utilize our resources and experiences to find the best possible path for our students to accelerate and explore their career, thus reaching their goal state."
+        />
       </section>
+      <Action imagePath="/camp.svg" title="Accelerate your Career" />
     </>
   );
 }

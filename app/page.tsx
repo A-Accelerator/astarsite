@@ -31,7 +31,7 @@ export default function Home() {
         <Testimonials />
       </section>
       <section className="relative z-10 py-12 bg-white">
-        <Action />
+        <Action imagePath="/camp.svg" title="Join A* Accelerator!"/>
       </section>
     </main>
   );
