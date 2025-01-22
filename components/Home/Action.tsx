@@ -17,14 +17,14 @@ const Action = ({ imagePath, title }: ActionProps) => {
       }}
     >
       {/* Overlay for added style */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-30"></div>
+      <div className="absolute inset-0 bg-black opacity-40"></div>
 
       {/* Content */}
       <div className="relative z-10 text-center">
         <h1 className="text-4xl lg:text-6xl font-bold mb-6">{title}</h1>
         <div className="flex justify-center gap-4">
-          <Button>Learn More</Button>
-          <Button>Sign Up Now</Button>
+          <Button className="bg-blue-400">Learn More</Button>
+          <Button className="bg-blue-400">Sign Up Now</Button>
         </div>
       </div>
     </section>

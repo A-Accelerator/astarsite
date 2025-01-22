@@ -7,14 +7,19 @@ const AboutUs = () => {
   return (
     <>
       <section
-        className="relative text-black py-40 flex items-center justify-center"
+        className="relative py-20 text-black flex items-center justify-center"
         style={{
-          backgroundImage: `url(${"shyam.png"})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          // backgroundImage: `url("mountain.jpeg")`,
+          // backgroundSize: "contain", // Preserve original proportions
+          // backgroundRepeat: "no-repeat", // Prevent tiling
+          // backgroundPosition: "center", // Center the image
+          backgroundColor: "#ffffff", // Set background to white
         }}
       >
-        {/* Overlay for better text visibility */}
+        {/* Semi-transparent overlay */}
+        <div className="absolute inset-0 bg-black opacity-10"></div>
+
+        {/* Text content */}
         <h1 className="relative z-10 text-center font-extrabold text-5xl md:text-6xl tracking-wide">
           About Us
         </h1>
@@ -38,7 +43,7 @@ const AboutUs = () => {
           description="A* is a search algorithm that that uses a predicted heuristic value based on certain parameters to find the shortest distance from the current state to a goal state. This program is a replica of the A* search algorithm where we utilize our resources and experiences to find the best possible path for our students to accelerate and explore their career, thus reaching their goal state."
         />
       </section>
-      <Action imagePath="/camp.svg" title="Accelerate your Career" />
+      <Action imagePath="/accelerate.webp" title="Accelerate your Career" />
     </>
   );
 }
