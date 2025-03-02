@@ -34,7 +34,7 @@ const Learn = () => {
             Industry Exposure
           </AccordionTrigger>
           <AccordionContent className="px-6 py-4 text-gray-700 bg-white rounded-b-lg">
-            Yes. It adheres to the WAI-ARIA design pattern.
+            Yes. It adheres to the WAI-ARIA design patterns.
           </AccordionContent>
         </AccordionItem>
 
