@@ -23,7 +23,7 @@ const Mission = () => {
       </div>
       <div className="flex flex-col gap-10 items-center justify-center bg-gray-90 text-4xl text-gray-90 py-12 text-center px-10">
         <a href="/small-business-services" className="border border-gray-10 rounded-sm text-gray-10 text-lg py-1.5 w-96">
-          2024 Summer Accelerator Interest Form
+          2025 Summer Accelerator Interest Form
         </a>
         <a href="/small-business-services" className="border border-gray-10 rounded-sm text-gray-10 text-lg py-1.5 w-96">
           Read some of our testimonials!
