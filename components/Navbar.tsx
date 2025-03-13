@@ -82,52 +82,19 @@ const Navbar = () => {
           <a href="/" className="text-sm/6 font-semibold text-gray-900">
             Home
           </a>
-          <div ref={dropdownRef} className="relative">
-            <button
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
-            >
-              Programs
-              <ChevronDownIcon
-                aria-hidden="true"
-                className="size-5 flex-none text-gray-400"
-              />
-            </button>
-            {dropdownOpen && (
-              <div className="absolute z-10 mt-2 w-48 bg-white shadow-lg rounded-md border border-gray-300">
-                {programs.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="block px-4 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-100"
-                  >
-                    <div className="flex items-center gap-x-3">
-                      <item.icon
-                        className="h-5 w-5 text-gray-600"
-                        aria-hidden="true"
-                      />
-                      <span>{item.name}</span>
-                    </div>
-                    <p className="mt-1 text-xs text-gray-600">
-                      {item.description}
-                    </p>
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
+
+          <a href="/Programs" className="text-sm/6 font-semibold text-gray-900">
+            Programs
+          </a>
 
           <a href="/AboutUs" className="text-sm/6 font-semibold text-gray-900">
             About Us
           </a>
-          <a href="/Mentors" className="text-sm/6 font-semibold text-gray-900">
-            Mentors
-          </a>
           <a
-            href="/Testimonials"
+            href="/BusinessServices"
             className="text-sm/6 font-semibold text-gray-900"
           >
-            Testimonials
+            Business Services
           </a>
           <a
             href="/ContactUs"
