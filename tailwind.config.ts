@@ -8,6 +8,7 @@ module.exports = {
   ],
   theme: {
   	extend: {
+		sans: ['"Playfair"', 'sans-serif'],
   		colors: {
   			green: {
   				'50': '#30AF5B',
